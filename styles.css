@@ -332,17 +332,6 @@ mark {
   background-color: #5c5f63;
 }
 
-.blurred .column:not(.note-column) {
-  filter: blur(4px);
-  pointer-events: none;
-}
-
-.blurred .note:not(.editing) {
-  filter: blur(4px);
-  pointer-events: none;
-}
-
-
 @media (max-width: 600px) {
   .column:nth-child(n + 2) {
     display: none;
