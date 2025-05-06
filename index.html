@@ -8,44 +8,47 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link href="node_modules/material-icons/iconfont/material-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="topbar">
         <div class="topbar-left">
-            <span class="material-symbols-outlined hamburger">
+            <span class="material-icons">
                 menu
             </span>
             <div class="logo"><img src="assets/note_icon.png" alt="google notes icon"><span>Keep Clone</span></div>
         </div>
-        <!-- <input type="text" placeholder="Search" class="search-box"> -->
-        <form class="search-form" method="get" role="search">
-            <!-- Search Button -->
-            <button class="search-submit" aria-label="Search">
+        <form class="search-form">
+            <div>
                 <span class="material-icons">search</span>
-            </button>
-
-            <!-- Search Input -->
-            <div class="search-input-container">
-                <input class="search-input" aria-label="Search" autocomplete="off" placeholder="Search" role="combobox"
-                    name="q" type="text" oninput="toggleClearButton(this)" />
             </div>
-
-            <!-- Clear Search Button -->
-            <button class="search-clear" aria-label="Clear search" type="button" onclick="clearSearchInput()">
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="Search" />
+            </div>
+            <!-- <div>
                 <span class="material-icons">clear</span>
-            </button>
+            </div> -->
         </form>
-        <div class="topbar-left">
-            <span class="material-icons">refresh</span>
-            <span class="material-icons">settings</span>
-            <span id="list-view-btn" class="material-icons">view_list</span>
-            <span class="material-icons" id="grid-view-btn">grid_view</span>
-        </div>
-        <div class="topbar-far-left">
-            <span class="material-icons">settings</span>
-            <span class="material-icons">grid_view</span>
+        <div class="topbar-right">
+            <div>
+                <span class="material-icons">refresh</span>
+                <span id="list-view-btn" class="material-icons">view_list</span>
+                <span class="material-icons">settings</span>
+                <!-- <span class="material-icons" id="grid-view-btn">grid_view</span> -->
+            </div>
+            <div>
+                <span class="material-icons" id="grid-view-btn">grid_view</span>
+                <span class="material-icons">
+                    account_circle
+                </span>
+            </div>
         </div>
     </header>
     <aside class="sidebar">
@@ -74,7 +77,7 @@
             </ul>
         </nav>
     </aside>
-
+    <!-- 
     <main class="main-content">
         <section class="notes-container">
             <div class="column" id="column-1"></div>
@@ -84,13 +87,8 @@
             <div class="column" id="column-5"></div>
             <div class="column" id="column-6"></div>
         </section>
-    </main>
+    </main> -->
     <script src="./js/main.js"></script>
-    <script src="./js/search.js"></script>
-    <script src="./js/db.js"></script>
-    <script src="./js/editSave.js"></script>
-
-
 </body>
 
 </html>
